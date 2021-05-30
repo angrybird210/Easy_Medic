@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+    <title>Result-Page</title>
+</head>
+
+
+   <body>
+    <header class="site-header">
+  <nav class="navbar navbar-expand-md navbar-dark bg-info fixed-top">
+  <div class="container">
+  <a class="navbar-brand" href="/">
+      <img src="https://www.pngrepo.com/download/284250/surgeon-doctor.png" alt="LOGO" width="30" height="30">
+    </a>
+      <a class="navbar-brand mr-4" href="/">EasyMedic</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+        <button type="button" class="btn btn-outline-primary"><a class="nav-item nav-link" aria-current="page" href="/">Home</a></button>
+        </li>
+        <li class="nav-item">
+        <button type="button" class="btn btn-outline-primary">
+        <a class="nav-item nav-link" href="/about">About</a>
+        </button>
+          
+        </li>
+        <div class="navbar-nav mr-auto">
+        <button type="button" class="btn btn-outline-secondary">
+          <a class="nav-item nav-link" href="/cancer">Cancer</a></button>
+          <button type="button" class="btn btn-outline-secondary">
+          <a class="nav-item nav-link" href="/diabetes">Diabetes</a></button>
+          <button type="button" class="btn btn-outline-secondary">
+          <a class="nav-item nav-link" href="/heart">Heart</a></button>
+          <button type="button" class="btn btn-outline-secondary">
+          <a class="nav-item nav-link" href="/liver">Liver</a></button>
+          <button type="button" class="btn btn-outline-secondary">
+          <a class="nav-item nav-link" href="/kidney">Kidney</a></button>
+          <button type="button" class="btn btn-outline-secondary">
+           <a class="nav-item nav-link" href="/Malaria">Malaria</a></button>
+           <button type="button" class="btn btn-outline-secondary">
+           <a class="nav-item nav-link" href="/Pneumonia">Pneumonia</a></button>
+        </div>
+      <li class="nav-item pull-right">
+      <button type="button" class="btn btn-outline-danger">
+          <a class="nav-item nav-link" href="/gethelp">Nearest Doctor!</a></button>
+        </li>
+        </ul>
+    </div>
+  </div>
+</nav>
+</header>
+   	<div class="container">
+   		<h2>The result is : </h2><br>
+       <h3> {{ prediction }}</h3>
+   </div>
+   </body>
+</html>  
